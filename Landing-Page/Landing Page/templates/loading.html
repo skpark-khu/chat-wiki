@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='css/progress.js') }}" defer></script>
+    <title>loading ChatWiKi</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>ChatWiKi생성중...</span>
+    </div>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                window.location.href = "/redirect";
+            }, 5000); // 5초 후에 /redirect로 이동
+        });
+    </script>
+</body>
+
+</html>
