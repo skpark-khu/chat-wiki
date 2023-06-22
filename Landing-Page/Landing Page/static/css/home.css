@@ -142,6 +142,13 @@ input[type="submit"]:hover {
     background-color: #694a2c;
 }
 
+.warning {
+    font-size: 12px;
+    margin-top: 12px;
+    color: #8fedfa;
+    font-weight: 600;
+}
+
 .ToHome {
     display: flex;
     flex-direction: column;
