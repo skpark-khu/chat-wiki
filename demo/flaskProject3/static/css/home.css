@@ -1,0 +1,201 @@
+::selection {
+    color: #000;
+    background: #fff;
+}
+
+.menu {
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 12;
+}
+
+.menu {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'C_Font', sans-serif;
+}
+
+.summary {
+    padding-right: 5%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'C_Font', sans-serif;
+}
+
+.img {
+    background: url("img.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+
+.img::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.center .title {
+    color: #8fedfa;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.center .sub_title {
+    color: #8fedfa;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+
+.center .btns {
+    margin-top: 40px;
+    text-align: center;
+    color: #8fd3fa;
+}
+
+.btns label {
+    padding: .5em .75em;
+    color: #4b4b4b;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+}
+
+.btns form {
+    display: flex;
+    flex-direction: column;
+}
+
+.btns form input[type="file"],
+.btns form input[type="submit"] {
+    margin-top: 20px;
+}
+
+.btns input[type="file"] {
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+}
+
+input[type="submit"] {
+    background-color: #22180e;
+    color: #8fd3fa;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+input[type="submit"]:hover {
+    background-color: #694a2c;
+}
+
+.warning {
+    font-size: 12px;
+    margin-top: 12px;
+    color: #8fedfa;
+    font-weight: 600;
+}
+
+.ToHome {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'C-font';
+    vertical-align: middle;
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'C-font';
+    border: none;
+    outline: none;
+    background-color: #8fd3fa;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#scrollToTop:hover {
+    background-color: #777;
+}
+
+.display-2 {
+    font-size: 30px;
+}
+
+.highlight {
+    color: #33689c;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.github-icon {
+    font-size: 24px;
+    /* 원하는 크기로 변경하세요 */
+}
